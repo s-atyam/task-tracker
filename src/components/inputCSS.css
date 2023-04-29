@@ -1,0 +1,178 @@
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 80%;
+}
+
+.form__field {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid gray;
+  font-size: 1.2rem;
+  color: rgb(190, 190, 190);
+  padding: 7px 1px;
+  background: transparent;
+  transition: border-color 0.2s;
+  caret-color: rgb(201, 201, 201);
+  caret-shape: bar;
+}
+
+.form__field::placeholder {
+    color: transparent;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: pointer;
+    top: 20px;
+}
+
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: rgb(216, 185, 46);
+}
+
+.form__field:focus {
+  padding-bottom: 6px;  
+  font-weight: 400;
+  border-width: 2px;
+ border-color: rgb(216, 185, 46);
+}
+.form__field:focus form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: rgb(216, 185, 46);
+    font-weight:300;    
+    outline: none;
+  }
+.form__field{
+   box-shadow:none;
+   outline: none;
+}
+
+.btn{
+    background-color: rgb(216, 185, 46);
+}
+
+.input-name{
+    display: flex;
+    width: 81%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 10px;
+}
+.input{
+    width: 49.5%;
+}
+
+.fluid{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow:column ;
+}
+
+.crud-add{
+  width: 50%;
+  height: 70%;
+  border: 5px solid grey;
+  border-radius: 10px;
+  justify-content:space-around ;
+  background-color: rgba(55,55,55,0.5);
+}
+
+.field_input{
+  width: 70%;
+  height: 8%;
+  background-color: transparent;
+  margin-top: 10px;
+  border: none;
+  border: 2px solid grey;
+  border-radius: 3px;
+  padding-left: 15px;
+  color: blanchedalmond;
+  font-size: large;
+  outline: none;
+}
+.t_desc_input{
+  height: 40%;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+input[type="date"]{
+  background-color: transparent;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: grey;
+  font-size: 16px;
+  border: 2px solid grey;
+  border-radius: 5px;
+  width: 47%;
+  margin-top: 10px;
+  height: 7%;
+  outline: none;
+}
+::-webkit-calendar-picker-indicator{
+  background-color: #adadad;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+::-webkit-calendar-picker-indicator:hover {
+  background-color: #959595;
+  color: #e6e6e6;
+  cursor: pointer;
+}
+
+.crud-button-div{
+  width: 90%;
+  height: 10%;
+  flex-direction: row;
+  justify-content:space-around ;
+}
+.crud-button{
+  height: 80%;
+  width: 20%;
+  font-size: large;
+  background-color: transparent;
+  outline: none;
+  border: 3px solid cadetblue;
+  border-radius:5px ;
+  cursor: pointer;
+  color:#adadad ;
+}
+.crud-button:hover{
+  background-color: rgb(80, 79, 79);
+  color: #9c9c9c;
+}
+.treeCss{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 90%;
+  width: 90%;
+}
+.treeCss_btn{
+  width: 20%;
+  height: 6%;
+  margin-top: 10px;
+  color: #e6b738;
+  background-color: rgb(102, 39, 39);
+  cursor: pointer;
+  border: 3px solid #e6b738;
+  font-size: x-large;
+  border-radius: 10px;
+  transition: .25s;
+}
+.treeCss_btn:hover{
+  background-color: rgb(206, 80, 80);
+}
